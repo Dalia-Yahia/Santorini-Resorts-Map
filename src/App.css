@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 100%
+}
+
+/* start Aside style*/
+#asideSearchList {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  background-color: #222;
+  color: #ffa500;
+  width: 0;
+  box-shadow: 3px 10px 30px #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.close-nav {
+  height: 30px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  font-size: 30px;
+  margin-left: 50px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #222;
+  border: 1px solid #222;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  background-color: #333;
+}
+
+.search-filter {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 14px;
+}
+
+.search-filter input {
+  height: 37px;
+  width: 100%;
+  padding: 3px 3px 3px 8px;
+  background:none;
+  border: 2px solid #f7ad1c;
+  color: #ffe0a3;
+  font-size: 16px;
+  margin: 0 10px;
+  border-radius: 7px;
+}
+
+.search-filter input:focus {
+  border: 2px solid #ffc041;
+}
+
+.search-filter input:active {
+  border: 2px solid #ffc041;
+}
+
+.list-Container {
+  margin-top: 20px;
+}
+
+.places-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+}
+
+.places-list li a {
+  display: block;
+  text-decoration: none;
+  color: #c4c4c4;
+  padding: 14px 15px;
+  font-size: 15px;
+  border: 1px solid #2b2b2b;
+  cursor: pointer;
+}
+
+.places-list li a:hover {
+  background-color: #2b2b2b;
+  color: #ffeabf;
+}
+/* end Aside style */
+
+/* start main page content style*/
+.main-page-content {
+  display: flex;
+}
+/* end main page content style*/
+
+/* start right side section style */
+.right-side-section {
+  width: 100%;
+  transition: 0.5s;
+}
+/* end right side section style */
+
+/* start Header style*/
+.App-header {
+  height: 65px;
+  background-color:#222;
+  color: #fff;
+  border-bottom: 3px solid rgb(128, 128, 128);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.hamburgerMenu-navbar {
+  padding-top: 27px;
+}
+
+.menu-icon {
+  background-position: center;
+  margin-left: 1px;
+  padding: 15px 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #efe6e9;
+  background-image: url("./components/hamburgermenu_icon.png");
+  background-repeat: no-repeat;
+  border: none;
+}
+
+header .menu-icon:hover {
+  background-color: #528edc;
+}
+
+.header-right-section {
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.App-logo {
+  justify-content: center;
+  padding: 0;
+  width: 60px;
+  height: 61px;
+}
+
+.App-title {
+  font-size: 1.0rem;
+  margin: 17px 0px;
+  color: #ffa500;
+  font-family: 'Merienda', cursive;
+}
+
+.foursquare {
+    margin: 3px 9px 0;
+}
+/* end Header style*/
+
+/* start map section style */
+#map-section{
+  height: calc(100vh - 140px);
+}
+
+.info-window {
+  width: 312px;
+  height: 155px;
+}
+
+.info-window h2 {
+    font-size: 1.5em;
+    color: #193838;
+
+}
+
+.info-address,
+.info-position,
+.info-postalCode {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.info-span {
+  
+  color: rgba(235, 130, 10, 0.87);
+  font-weight: bold;
+}
+
+.more-info {
+  font-size: 1.2em;
+  color: #528edc;
+  font-weight: bold;
+}
+/*end map section style*/
+
+/* start Footer style */
+.App-footer {
+  width: 100%;
+  background-color: #222;
+  color: #aaa;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 11px 1px;
+  text-align: center;
+  text-transform: capitalize;
+  height:22px;
+}
+/* end Footer style */
+
+
+/* ************************  responsive  **************************** */
+@media screen and  (min-width: 600px) {
+  .App-logo {
+    margin: 0 15px;
+    width: 80px;
+  }
+
+  .App-title {
+    font-size: 1.8rem;
+    margin: 11px 0px
+  }
+
+  .foursquare {
+    margin: 6px 9px 0;
+  }
+
+  .App-footer {
+    font-size: 0.9rem;
+    padding: 7px 1px;
+  }
+
+}
+
+@media screen and  (min-width: 770px) {
+ .App-logo {
+   margin: 0 18px;
+   width: 95px;
+ }
+
+ .App-title {
+   font-size: 2.3rem;
+   margin: 3px 5px;
+ }
+
+ .foursquare {
+  margin: 6px 17px 0
+ }
+
+ .App-footer {
+   font-size: 0.9rem;
+   padding: 12px 1px;
+ }
+}
