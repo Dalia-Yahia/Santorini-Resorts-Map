@@ -77,7 +77,7 @@ class App extends Component {
         <SearchPlacesList
           resortsNames={resortsNames}
           onToggleOpen={this.onToggleOpen}
-          closeAside={this.closeAsideList}
+          closeAsideList={this.closeAsideList}
           venue={this.state.resorts}
           searchedPlaces={this.state.searchedPlaces}
           searchBy={this.searchBy}
